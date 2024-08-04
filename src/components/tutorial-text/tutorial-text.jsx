@@ -10,7 +10,8 @@ const TutorialText = () => {
         <ul>
           <li>Move the marker to reposition the solar panel.</li>
           <li>
-            The azimuth is automatically calculated based on the time of day at the current location of the solar panel, its latitude and longitude.
+            The azimuth is automatically calculated based on the time of day at the current location of the solar panel,
+            its latitude, and longitude.
           </li>
           <li>
             You can adjust the tilt, the solar panel&apos;s azimuth, the size of the solar panel, the panel efficiency,
