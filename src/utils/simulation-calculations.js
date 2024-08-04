@@ -86,8 +86,8 @@ const SimulationCalculations = {
    * Lots of this math is simplified and based on assumptions.
    */
   calculatePowerTransfer: (panelConfig, weatherData, location, pumpConfig) => {
-    const SOLAR_CONSTANT = 1361; // W/m^2 at top of atmosphere
-    const HOUR = 3600; // seconds in an hour
+    const SOLAR_CONSTANT = 1361;
+    const HOUR = 3600;
 
     const { area, tilt, efficiency, panelAzimuth } = panelConfig;
     const {
