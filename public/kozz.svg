@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+    <defs>
+        <linearGradient id="batteryGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4169E1"/>
+            <stop offset="100%" stop-color="#1E90FF"/>
+        </linearGradient>
+        <linearGradient id="batteryGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#32CD32"/>
+            <stop offset="100%" stop-color="#228B22"/>
+        </linearGradient>
+    </defs>
+    <rect x="16" y="64" width="224" height="128" rx="16" ry="16" fill="url(#batteryGradient1)"/>
+    <rect x="32" y="80" width="96" height="96" rx="8" ry="8" fill="url(#batteryGradient2)"/>
+    <rect x="240" y="96" width="16" height="64" rx="8" ry="8" fill="url(#batteryGradient1)"/>
+</svg>

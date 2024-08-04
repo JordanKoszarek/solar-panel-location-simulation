@@ -1,0 +1,33 @@
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@include keyframes(dropIn) {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@mixin animate($animation, $duration: 0.5s, $method: ease, $fill: forwards) {
+  animation: $animation $duration $method $fill;
+}
+
+@mixin dropIn($duration: 0.5s) {
+  @include animate(dropIn, $duration);
+}
+
+@include keyframes(fadeIn) {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@mixin fadeIn($duration: 0.5s) {
+  @include animate(fadeIn, $duration);
+}

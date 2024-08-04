@@ -1,0 +1,71 @@
+@import "src/styles/variables.scss";
+@import "src/styles/animations";
+
+.simulator-controls-container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  width: 600px;
+  padding: 16px;
+  background-color: $color-backdrop-secondary;
+  border-radius: 8px;
+  color: #e0e0e0;
+  max-height: calc(100vh - 360px); // Make sure there is always room for the simulator.
+  overflow: auto;
+
+  .simulator-controls-header {
+    margin-bottom: 16px;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+
+  .simulator-controls-sub-header {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .simulator-controls-input-header {
+    margin: 4px;
+    font-weight: 400;
+  }
+
+  section {
+    @include dropIn(0.5s);
+    margin-bottom: 16px;
+
+    h4 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      @include dropIn(0.5s);
+      margin: 4px 0;
+    }
+  }
+
+  .input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin-top: 0;
+        margin-left: 4px;
+        font-size: 11px;
+      }
+
+      input {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #555;
+        background-color: #333;
+        color: #e0e0e0;
+      }
+    }
+  }
+}
